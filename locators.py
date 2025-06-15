@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class Locators:
     LOGIN_BUTTON = (By.CSS_SELECTOR, "button.buttonSecondary.inButtonText")
     NO_ACCOUNT= (By.XPATH, "//button[.//text()='Нет аккаунта']")
@@ -13,21 +14,21 @@ class Locators:
     RED_FLAG = (By.CLASS_NAME, "input_inputError__fLUP9")
     ENTER = (By.XPATH, "//button[.//text()='Войти']")
     OUTPUT = (By.XPATH, "//button[contains(text(), 'Выйти')]")
-    CREATING_ADS = (By.XPATH, "//button[contains(text(), 'Разместить объявление')]")
+    CREATING_ADS = (By.XPATH, "//button[.//text()='Разместить объявление']")
     CONTENT_TEXT = (By.XPATH, "//h1[contains(text(), 'Чтобы разместить объявление, авторизуйтесь')]")
     NAME = (By.XPATH,"//input[@name='name']")
-    DESCRIPTION = ( By.XPATH, "//*[@id='root']/div/div[2]/div/form/div[4]/div/textarea")
+    DESCRIPTION = ( By.XPATH, "//textarea[@name='description']")
     COST = (By.XPATH, "//input[@name='price']")
     DROPDOWN= (
     By.XPATH, "//button[@class='dropDownMenu_arrowDown__pfGL1 dropDownMenu_noDefault__wSKsP']")
     DROPDOWN_CATEGORY= (By.XPATH, "//button[.//span[text()='Технологии']]")
-    DROPDOWN_2 = (By.XPATH,"(//button[@class='dropDownMenu_arrowDown__pfGL1 dropDownMenu_noDefault__wSKsP'])[2]")
-    DROPDOWN_CITY = (By.XPATH, "//button[.//span[text()='Санкт-Петербург']]")
-    RADIOBUTTON_NEW =(By.XPATH, "//*[@id='root']/div/div[2]/div/form/fieldset/div/div[2]/div")
+    DROPDOWN_2 = (By.XPATH,"(//button[@class='dropDownMenu_arrowDown__pfGL1 dropDownMenu_noDefault__wSKsP'])")
+    DROPDOWN_CITY = (By.XPATH, "//span[contains(text(), 'Санкт-Петербург')]/ancestor::div[contains(@class, 'dropDownMenu_dropMenu__sBxhz')]")
+    RADIOBUTTON_NEW =(By.XPATH, "//div[@class='radioUnput_inputRegular__FbVbr']")
     SUBMIT_AD_BUTTON = (By.XPATH, "//button[contains(text(), 'Опубликовать')]")
-    MORPHIUS =  (By.XPATH, "(//div[@class='card'])[2]")
+    MORPHIUS =  (By.XPATH, "(//div[@class='card'])")
     TEXT = (By.XPATH, ".//h2[@class='h2' and text()='Морфиус']")
-    ARROW_BUTTON = (By.XPATH,"//*[@id='root']/div/div[2]/div[4]/div/div[2]/button[2]")
+    ARROW_BUTTON = (By.XPATH,"//button[@class='arrowButton arrowButton--right undefined']")
 
 
 
