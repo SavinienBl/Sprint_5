@@ -81,13 +81,6 @@ class TestCreatind:
         DROPDOWNS_CATEGORYS.click()
 
 
-        #DROPDOWNS_FOR_CITY = WebDriverWait(driver, 5).until(
-            #expected_conditions.element_to_be_clickable(Locators.DROPDOWN_2)
-        #)
-        #driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", DROPDOWNS_FOR_CITY)
-        #DROPDOWNS_FOR_CITY .click()
-
-
         DROPDOWNS_CITY = WebDriverWait(driver, 20).until(
             expected_conditions.element_to_be_clickable(Locators.DROPDOWN_CITY)
         )
@@ -116,7 +109,7 @@ class TestCreatind:
 
         ARROW = WebDriverWait(driver, 20).until(
             expected_conditions.element_to_be_clickable(Locators.ARROW_BUTTON))
-        
+
         ARROW.click()
 
         ARROW = WebDriverWait(driver, 20).until(
